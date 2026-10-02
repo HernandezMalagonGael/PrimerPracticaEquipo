@@ -193,3 +193,94 @@ body {
   color: #d93025;
   font-weight: 500;
 }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+
+/* --- Barra de Navegación --- */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e1e4e8;
+  padding: 1rem 2rem;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-logo, 
+.nav-link {
+  text-decoration: none;
+  color: #0066ff;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.nav-logo:hover, 
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Contenedor Principal de Login --- */
+.main-container {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.login-container {
+  max-width: 380px;
+}
+
+.login-container h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+}
+
+/* --- Formulario e Inputs --- */
+.form-group {
+  margin-bottom: 0.8rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  outline: none;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #0066ff;
+}
+
+/* --- Botón Entrar --- */
+.btn-primary {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0066ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 0.2rem;
+}
+
+.btn-primary:hover {
+  background-color: #0052cc;
+}
