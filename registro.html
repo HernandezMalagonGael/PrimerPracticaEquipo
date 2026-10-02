@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-
+      <main>
+    <form class="formulario-registro" id="form-registro" novalidate>
+      <h1>Registrar Asistencia</h1>
+      <label for="nombre"></label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo: ">
+      <span class="error" id="error-nombre"></span>
+      <label for="boleta"></label>
+      <input type="text" id="boleta" name="boleta" required placeholder="Boleta: ">
+      <span class="error" id="error-boleta"></span>
+      <button type="submit">Registrar</button>
+      <p class="mensaje-exito" id="mensaje-exito"></p>
+    </form>
+  </main>
 </body>
 </html>
