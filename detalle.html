@@ -1,54 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
     <nav>
         <a href="index.html">Talleres</a>
     </nav>
-    
 
     <main>
+        <section class="info-taller">
+            <h2 id="nombre-taller">TAller de HTML y CSS</h2>
+            <p id="instructor">Nombre del Instructor: David Gael Cruz Fuentes</p>
+            <p id="fecha">Fecha: 22 Oct 2026</p>
+            <p id="asistentes">Asistentes Registrados: 0</p>
+        </section>
 
-    <section class="info-taller" >
-      <h2>nombre taller</h2>
-        <p>Nombre del Instructor:</p>
-        <p>Fecha:</p>
-        <p>Asistentes Registrados:</p>
-        <p></p>
-    </section>
+        <section>
+            <h1>Ir a registrar Asistencia</h1>
+            <p><a id="link-registro" href="registro.html">registrar</a></p>
+        </section>
+    </main>
 
-
-
-    <form class="" id="formRegistro" novalidate>
-
-      <h1>Registrar asistencia</h1>
-      
-      <div class="">
-        <label for="nombre">Nombre: </label>
-        <input type="text" id="nombre" name="nombre" required minlength="3">
-        <span class="mensaje-error" id="error-nombre">Ingresa un nombre válido (mínimo 3 letras)</span>
-      </div>
-      
-      <div class="">
-        <label for="boleta">Boleta: </label>
-        <input type="text" id="boleta" name="boleta" required pattern="[0-9]{10}">
-        <span class="mensaje-error" id="error-boleta">La boleta debe tener 10 dígitos numéricos</span>
-      </div>
-
-      <button type="submit">Registrar</button>
-
-      <p class="mensaje-exito" id="mensajeExito">Registro exitoso</p>
-    </form>
-
-  </main>
     
-</body>
 
-</html>
+</body>
+</html>   
