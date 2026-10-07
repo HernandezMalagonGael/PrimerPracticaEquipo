@@ -8,25 +8,29 @@
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Talleres</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Talleres</a>
+        </div>
     </nav>
 
-    <main>
-        <section class="info-taller">
-            <h2 id="nombre-taller">TAller de HTML y CSS</h2>
-            <p id="instructor">Nombre del Instructor: David Gael Cruz Fuentes</p>
-            <p id="fecha">Fecha: 22 Oct 2026</p>
-            <p id="asistentes">Asistentes Registrados: 0</p>
+    <main class="main-container">
+        
+        <button class="btn-back" onclick="window.location.href='index.html'">← Volver a talleres</button>
+
+        <section class="detalle-header">
+            <h1 id="nombre-taller">Taller de HTML y CSS</h1>
+            <p id="instructor" class="info-item">Nombre del Instructor: David Gael Cruz Fuentes</p>
+            <p id="fecha" class="info-item">Fecha: 22 Oct 2026</p>
+            <p id="asistentes" class="info-item">Asistentes Registrados: 0</p>
         </section>
 
-        <section>
-            <h1>Ir a registrar Asistencia</h1>
-            <p><a id="link-registro" href="registro.html">registrar</a></p>
+        <section class="form-container">
+            <h2>Ir a registrar Asistencia</h2>
+            <a id="link-registro" href="registro.html" class="btn-primary" style="display: inline-block; text-align: center; text-decoration: none;">Registrar</a>
         </section>
+
     </main>
-
     
-
 </body>
-</html>   
+</html>  
