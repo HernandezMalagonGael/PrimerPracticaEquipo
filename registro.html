@@ -7,18 +7,26 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-      <main>
-    <form class="formulario-registro" id="form-registro" novalidate>
-      <h1>Registrar Asistencia</h1>
-      <label for="nombre"></label>
-      <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo: ">
-      <span class="error" id="error-nombre"></span>
-      <label for="boleta"></label>
-      <input type="text" id="boleta" name="boleta" required placeholder="Boleta: ">
-      <span class="error" id="error-boleta"></span>
-      <button type="submit">Registrar</button>
-      <p class="mensaje-exito" id="mensaje-exito"></p>
-    </form>
-  </main>
+
+    <main class="main-container">
+        <div class="form-container login-container">
+            <h1>Registrar Asistencia</h1>
+            <form id="form-registro" novalidate>
+                <div class="form-group">
+                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo: ">
+                    <span class="mensaje-alerta" id="error-nombre"></span>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="boleta" name="boleta" required placeholder="Boleta: ">
+                    <span class="mensaje-alerta" id="error-boleta"></span>
+                </div>
+                
+                <button type="submit" class="btn-primary">Registrar</button>
+                <p class="mensaje-exito" id="mensaje-exito"></p>
+            </form>
+        </div>
+    </main>
+
 </body>
 </html>
