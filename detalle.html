@@ -1,54 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
 
-    <nav>
-        <a href="index.html">Talleres</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Talleres</a>
+        </div>
     </nav>
-    
 
-    <main>
+    <main class="main-container">
+        
+        <button class="btn-back" onclick="window.location.href='index.html'">← Volver a talleres</button>
 
-    <section class="info-taller" >
-      <h2>nombre taller</h2>
-        <p>Nombre del Instructor:</p>
-        <p>Fecha:</p>
-        <p>Asistentes Registrados:</p>
-        <p></p>
-    </section>
+        <section class="detalle-header">
+            <h1 id="nombre-taller">Taller de HTML y CSS</h1>
+            <p id="instructor" class="info-item">Nombre del Instructor: David Gael Cruz Fuentes</p>
+            <p id="fecha" class="info-item">Fecha: 22 Oct 2026</p>
+            <p id="asistentes" class="info-item">Asistentes Registrados: 0</p>
+        </section>
 
+        <section class="form-container">
+            <h2>Ir a registrar Asistencia</h2>
+            <a id="link-registro" href="registro.html" class="btn-primary" style="display: inline-block; text-align: center; text-decoration: none;">Registrar</a>
+        </section>
 
-
-    <form class="" id="formRegistro" novalidate>
-
-      <h1>Registrar asistencia</h1>
-      
-      <div class="">
-        <label for="nombre">Nombre: </label>
-        <input type="text" id="nombre" name="nombre" required minlength="3">
-        <span class="mensaje-error" id="error-nombre">Ingresa un nombre válido (mínimo 3 letras)</span>
-      </div>
-      
-      <div class="">
-        <label for="boleta">Boleta: </label>
-        <input type="text" id="boleta" name="boleta" required pattern="[0-9]{10}">
-        <span class="mensaje-error" id="error-boleta">La boleta debe tener 10 dígitos numéricos</span>
-      </div>
-
-      <button type="submit">Registrar</button>
-
-      <p class="mensaje-exito" id="mensajeExito">Registro exitoso</p>
-    </form>
-
-  </main>
+    </main>
     
 </body>
-
-</html>
+</html>  
